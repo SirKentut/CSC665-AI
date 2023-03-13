@@ -1,0 +1,20 @@
+What problems did you encounter? How did you overcome them?
+    1. While doing this assignment my biggest problem was figuring out how to implement the data structures.
+     A lot of youtube videos lol. Honestly, without youtube I would have never been able to complete this assignment.
+
+
+Did anything surprise you? What did you learn from it?
+    2.I surprised myself. I have to say this has been one of my hardest assignments in coding. 
+        I learned that i need to practice more python code and learn how to code in the language. 
+        Because that'll be the only way for me to suceed in this class
+
+Can you explain why your heuristics for Q6 and Q7 are admissible and consistent?\
+    3. In the case of Q6, the corner function returns the minimum Manhattan distance to the nearest unreached corner, which is a lower bound on the actual cost to reach the goal, since we cannot reach the goal without visiting all the corners. This is because the Manhattan distance between two points is always less than or equal to the actual distance, which follows from the triangle inequality. Thus, the heuristic is admissible. Moreover, the given heuristic function is consistent since it satisfies the condition of triangular inequality for all pairs of nodes. Consistency implies that the heuristic never overestimates the cost of reaching the goal.
+
+    4. The heuristic used in this search problem is the Manhattan distance from the current Pacman position to the nearest remaining food dot. This heuristic is admissible because the minimum distance required to collect all remaining food dots must be greater than or equal to the Manhattan distance from the current position to the nearest remaining food dot. Thus, the heuristic never overestimates the cost to reach the goal state.
+
+        To show that the heuristic is consistent, consider any two adjacent states S and S' with corresponding costs g(S) and g(S') + c(S, S'). Let's call the nearest remaining food dot from S as F(S), and the nearest remaining food dot from S' as F(S'). Then the cost of moving from S to S' is c(S, S') = h(S') - h(S) (by definition of the heuristic). Also, the Manhattan distance between F(S) and F(S') is less than or equal to the actual distance between these dots (by the triangle inequality). Therefore, we have:
+
+        h(S') - h(S) <= dist(F(S), F(S')) <= c(S, S')
+
+        Thus, the heuristic satisfies the triangular inequality, and is consistent.
