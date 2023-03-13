@@ -1,4 +1,4 @@
-#Projects for "Artificial Intelligence" (CS 665)
+# Projects for "Artificial Intelligence" (CS 665)
 This repository contains my solutions to the projects of the course of "Artificial Intelligence" (CS665). I used the material from Spring 2023.
 
  Project 1 - Search
@@ -10,10 +10,10 @@ Notes
 Each project is in its own folder. For each project, the output of the auto-grader is saved as autograder.out inside the project folder.
 
 
-#Project 1 - Graph search - Implementation Notes
+# Project 1 - Graph search - Implementation Notes
 Project 1 is about applying graph search algorithms to PacMan (with no adversaries in the maze)
 
-#Question 1-4 - Search algorithms
+# Question 1-4 - Search algorithms
 All the search algorithms variants were implemented using a single generic search function and various Fringe implementations, one for each search variant:
 
 for DFS, it is stack
@@ -38,7 +38,7 @@ the Manhattan distance to the nearest unvisited corner
 the shortest Manhattan path from this corner to the remaining corners (if any)
 The second term is pre-computed for the cases in which the unvisited corners are 3 or 4, even though it wouldn't be expensive to compute.
 
-#Question 7 - Eating all dots: heuristic
+# Question 7 - Eating all dots: heuristic
 The heuristic sums:
 
 the minimum cost for reaching any dot
