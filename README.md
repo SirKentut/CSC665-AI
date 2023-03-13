@@ -1,4 +1,4 @@
-# Projects for "Artificial Intelligence" (CS 665)
+## Projects for "Artificial Intelligence" (CS 665)
 This repository contains my solutions to the projects of the course of "Artificial Intelligence" (CS665). I used the material from Spring 2023.
 
  Project 1 - Search
@@ -31,7 +31,7 @@ Alternative implementations could:
 
 store the entire path in the node itself
 store the previous node in an external dictionary.
-#Question 6 - Eating foods on corners: heuristic
+# Question 6 - Eating foods on corners: heuristic
 The heuristic was obtained by relaxation, assuming there are no walls in the maze. It is obtained by summing:
 
 the Manhattan distance to the nearest unvisited corner
